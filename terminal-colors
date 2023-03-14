@@ -1,0 +1,9 @@
+#! /bin/bash
+
+path=~/.config/kitty
+ls $path/themes/
+
+echo "Name option: " && read option
+
+cat $path/themes/$option > $path/kitty.conf
+cat $path/default.conf >> $path/kitty.conf
